@@ -1,41 +1,51 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Script Case [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/script-case/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/script-case)
 
-My awesome module.
+Make text superscript or subscript.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/script-case.png)](https://npmjs.com/package/script-case)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install script-case
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const scriptCase = require("script-case");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+scriptCase.superscript("hello world");
+//=> 'ʰᵉˡˡᵒ ʷᵒʳˡᵈ'
+
+scriptCase.subscript("hello world")
+//=> 'ₕₑₗₗₒ wₒᵣₗd'
+```
+
+You can also get the internal conversion dictionaries:
+
+```js
+const superscript = require("script-case/superscript")
+//=> { "0": "⁰", "1": "¹", ... }
+
+const subscript = require("script-case/subscript")
+//=> { "0": "₀", "1": "₁", ... }
 ```
 
 ## API
 
-### theModule(input, options?)
+### scriptCase.superscript(input)
 
 #### input
 
 Type: `string`
 
-Lorem ipsum.
+The string to convert.
 
-#### options
+### scriptCase.subscript(input)
 
-Type: `object`
+#### input
 
-##### postfix
+Type: `string`
 
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The string to convert.

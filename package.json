@@ -1,24 +1,38 @@
 {
-	"name": "the-module",
+	"name": "script-case",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Make text superscript or subscript.",
+	"repository": "https://github.com/Richienb/script-case.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
 	"files": [
 		"index.js",
-		"index.d.ts"
+		"index.d.ts",
+		"superscript.json",
+		"subscript.json"
 	],
 	"engines": {
-		"node": ">=10"
+		"node": ">=4"
 	},
 	"scripts": {
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"superscript",
+		"subscript",
+		"text",
+		"convert",
+		"unicode",
+		"character",
+		"conversion",
+		"detect",
+		"change"
+	],
+	"dependencies": {
+		"map-string": "^1.0.0"
+	},
 	"devDependencies": {
 		"ava": "^3.0.0",
 		"eslint-config-richienb": "^0.3.0",

@@ -1,13 +1,7 @@
 const test = require("ava")
-const theModule = require(".")
+const scriptCase = require(".")
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(scriptCase.superscript("hello world"), "ʰᵉˡˡᵒ ʷᵒʳˡᵈ")
+	t.is(scriptCase.subscript("hello world"), "ₕₑₗₗₒ wₒᵣₗd")
 })

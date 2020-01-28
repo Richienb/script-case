@@ -2660,6 +2660,11 @@ map-obj@^2.0.0:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-2.0.0.tgz#a65cd29087a92598b8791257a523e021222ac1f9"
   integrity sha1-plzSkIepJZi4eRJXpSPgISIqwfk=
 
+map-string@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/map-string/-/map-string-1.0.0.tgz#301ba8e5b1d70f7d80412acab88d6b723a98940a"
+  integrity sha512-xuGpryS5ywlbqMJPVMQFxkfQpc1qFbaXgOTLEDHw6gKxfA2vfaLhCuLRPwmjU/ficXGr9Pi2O2APSf7IM6kggg==
+
 map-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"

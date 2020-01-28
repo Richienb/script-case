@@ -1,14 +1,25 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Make text superscript.
+ * @param input The string to convert.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const scriptCase = require("script-case");
+ *
+ * scriptCase.superscript("hello world");
+ * //=> 'ʰᵉˡˡᵒ ʷᵒʳˡᵈ'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+export declare function superscript(input: string): string
 
-export = theModule;
+/**
+ * Make text subscript.
+ * @param input The string to convert.
+ * @example
+ * ```
+ * const scriptCase = require("script-case");
+ *
+ * scriptCase.subscript("hello world")
+ * //=> 'ₕₑₗₗₒ wₒᵣₗd'
+ * ```
+*/
+export declare function subscript(input: string): string
