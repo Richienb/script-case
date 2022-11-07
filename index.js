@@ -2,8 +2,8 @@
 
 const mapString = require("map-string")
 
-const superscript = require("./superscript")
-const subscript = require("./subscript")
+const superscript = require("./superscript.json")
+const subscript = require("./subscript.json")
 
 const convert = (input, dictionary) => {
 	if (typeof input !== "string") throw new TypeError("`input` must be a string!")
